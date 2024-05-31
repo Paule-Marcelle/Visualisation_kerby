@@ -38,7 +38,7 @@ def main():
     set_background("./images/image4.jpg")
 
     # Chemins vers les fichiers PDF
-    pdf_dir = "C:/Users/bmd tech/Visualisation_kerby"
+    pdf_dir = "./Visualisation_kerby"
     pdf_files = {
         "DATA March & April 2024": os.path.join(pdf_dir, "Data Analysis March&April2024.pdf"),
         "DATA May 2024": os.path.join(pdf_dir, "Data Analysis_MAY2024.pdf")
