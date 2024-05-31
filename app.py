@@ -16,26 +16,26 @@ def convert_pdf_to_images(pdf_path, zoom=2):
         images.append(img_data)
     return images
 
-# def set_background(image_file):
-#     with open(image_file, "rb") as image:
-#         encoded_image = base64.b64encode(image.read()).decode()
-#     st.markdown(
-#         f"""
-#         <style>
-#         .stApp {{
-#             background-image: url("data:image/png;base64,{encoded_image}");
-#             background-size: cover;
-#         }}
-#         </style>
-#         """,
-#         unsafe_allow_html=True
-#     )
+def set_background(image_file):
+    with open(image_file, "rb") as image:
+        encoded_image = base64.b64encode(image.read()).decode()
+    st.markdown(
+        f"""
+        <style>
+        .stApp {{
+            background-image: url("data:image/png;base64,{encoded_image}");
+            background-size: cover;
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
 
 def main():
     st.title("VISUALISATION DES DONNEES KERBY")
 
     # Définir l'image de fond (optionnel)
-    # set_background("C:/Users/bmd tech/Visualisation_kerby/images/image4.jpg")
+    set_background("./images/image4.jpg")
 
     # Chemins vers les fichiers PDF
     pdf_dir = "C:/Users/bmd tech/Visualisation_kerby"
