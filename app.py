@@ -35,7 +35,7 @@ def main():
     st.title("VISUALISATION DES DONNEES KERBY")
 
     # Définir l'image de fond (optionnel)
-    set_background("C:/Users/bmd tech/deploy_kerby/image4.jpg")
+    set_background("C:/Users/bmd tech/deploy_kerby/images/image4.jpg")
 
     # Chemins vers les fichiers PDF
     pdf_dir = "C:/Users/bmd tech/deploy_kerby"
