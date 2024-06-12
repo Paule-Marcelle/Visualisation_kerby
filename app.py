@@ -35,13 +35,14 @@ def main():
     st.title("VISUALISATION DES DONNEES KERBY")
 
     # Définir l'image de fond (optionnel)
-    set_background("./images/image4.jpg")
+    set_background("images/image4.jpg")  # Utiliser un chemin relatif
 
     # Chemins vers les fichiers PDF
-    # pdf_dir = "./Visualisation_kerby"
+    pdf_dir = "."
     pdf_files = {
-        "DATA March & April 2024": os.path.join("./Data Analysis March&April2024.pdf"),
-        "DATA May 2024": os.path.join("./Data Analysis_MAY2024.pdf")
+        "Data Analysis March & April 2024": os.path.join(pdf_dir, "Data Analysis March&April2024.pdf"),
+        "Data Analysis May 2024": os.path.join(pdf_dir, "Data Analysis_MAY2024.pdf"),
+        "Data Analysis June 2024": os.path.join(pdf_dir, "Data Analysis_JUNE2024.pdf"),
     }
 
     # Sélection du fichier PDF
@@ -60,12 +61,12 @@ def main():
     # Navigation
     col1, col2, col3 = st.columns([1, 1, 1])
     with col1:
-        if st.button("Page Précédente"):
+        if st.button("Précédent"):
             if st.session_state.page_number > 0:
                 st.session_state.page_number -= 1
 
     with col3:
-        if st.button("Page Suivante"):
+        if st.button("Suivant"):
             if st.session_state.page_number < len(st.session_state.images) - 1:
                 st.session_state.page_number += 1
 
