@@ -43,6 +43,7 @@ def main():
         "Data Analysis March & April 2024": os.path.join(pdf_dir, "Data Analysis March&April2024.pdf"),
         "Data Analysis May 2024": os.path.join(pdf_dir, "Data Analysis_MAY2024.pdf"),
         "Data Analysis June 2024": os.path.join(pdf_dir, "Data Analysis_JUNE2024.pdf"),
+        "Data Analysis July 2024": os.path.join(pdf_dir, "Data Analysis_JULY2024.pdf"),
     }
 
     # Sélection du fichier PDF
